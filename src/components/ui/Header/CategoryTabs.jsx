@@ -1,6 +1,8 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
-const CategoryTabs = ({ categories }) => {
+const CategoryTabs = () => {
+    const { categories } = useSelector(state => state.categories)
     return (
         <>
             <div className="gi-tab-list nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
